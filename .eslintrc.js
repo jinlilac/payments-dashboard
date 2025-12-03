@@ -66,6 +66,7 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     // @tanstack/query
     '@tanstack/query/exhaustive-deps': 'error',
+    '@typescript-eslint/no-unused-vars': 'error',
 
     // react-refresh
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
