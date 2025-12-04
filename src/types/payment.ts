@@ -3,7 +3,7 @@
  */
 
 // 거래 상태
-export type TransactionStatus = 'SUCCESS' | 'FAILED' | 'CANCELLED' | 'PENDING' | 'REFUNDED';
+export type TransactionStatus = 'SUCCESS' | 'FAILED' | 'CANCELLED' | 'PENDING';
 
 // 결제 수단
 export type PaymentType = 'ONLINE' | 'DEVICE' | 'MOBILE' | 'VACT' | 'BILLING';
@@ -46,4 +46,10 @@ export interface KPIData {
   variant: 'success' | 'warning' | 'error' | 'default';
   trend?: 'up' | 'down' | 'neutral';
   trendValue?: string;
+}
+
+export interface TransactionResponse {
+  status: number;
+  message: string;
+  data: Transaction[];
 }
