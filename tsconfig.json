@@ -8,9 +8,8 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
 
-    "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -26,8 +25,7 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-    "ignoreDeprecations": "6.0"
+    "noUncheckedSideEffectImports": true
   },
   "include": ["src", ".eslintrc.js", "vite.config.ts"]
 }
