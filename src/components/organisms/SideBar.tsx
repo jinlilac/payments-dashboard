@@ -22,19 +22,14 @@ export const Sidebar = () => {
       testId: 'menu-transactions',
     },
     {
-      id: 'analytics',
-      label: '분석',
-      path: '/dashboard/analytics',
-      icon: '📈',
-      testId: 'menu-analytics',
+      id: 'test',
+      label: '컴포넌트 테스트',
+      path: '/dashboard/test',
+      icon: '💳',
+      testId: 'menu-transactions',
     },
   ];
 
-  /**
-   * 🎯 활성 메뉴 판별
-   * - 정확한 경로 매칭
-   * - /dashboard는 index 페이지일 때만 활성
-   */
   const isActive = (path: string) => {
     if (path === '/dashboard') {
       return location.pathname === '/dashboard';
@@ -44,7 +39,6 @@ export const Sidebar = () => {
 
   return (
     <>
-      {/* 사이드바 */}
       <aside
         className={cn(
           'bg-primary-dark border-r border-gray-200 flex flex-col transition-all duration-300 overflow-hidden',
