@@ -22,7 +22,7 @@ export const CalendarModal = ({
   if (!showCalendar) return null;
 
   return (
-    <div className="absolute top-full left-0 mt-2 bg-white border border-gray-300 rounded-lg shadow-xl z-50 p-6 w-full sm:w-auto">
+    <div className="absolute top-full right-0 mt-2 bg-white border border-gray-300 rounded-lg shadow-xl z-50 p-6 w-full sm:w-auto">
       <div className="flex flex-col gap-6 sm:flex-row">
         {/* 달력 영역 */}
         <div className="flex flex-col">

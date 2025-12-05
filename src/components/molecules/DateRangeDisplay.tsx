@@ -1,5 +1,5 @@
 import { Input } from '@/components/atoms/Input';
-import { Button } from '@/components/atoms/Button';
+// import { Button } from '@/components/atoms/Button';
 
 interface DateRangeDisplayProps {
   startDate: Date;
@@ -17,19 +17,18 @@ export const DateRangeDisplay = ({
   <div className="flex items-end gap-2 mb-4">
     <div className="flex-1">
       <Input
-        label="발생 기간"
         value={`${formatDate(startDate)} → ${formatDate(endDate)}`}
         onClick={onOpenCalendar}
         readOnly
         variant="outlined"
-        size="md"
+        size="sm"
         fullWidth
         icon="📅"
         iconPosition="right"
       />
     </div>
-    <Button onClick={onOpenCalendar} variant="secondary" size="md" ariaLabel="달력 열기">
+    {/* <Button onClick={onOpenCalendar} variant="secondary" size="md" ariaLabel="달력 열기">
       📅
-    </Button>
+    </Button> */}
   </div>
 );
