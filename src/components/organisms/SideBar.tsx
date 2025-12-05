@@ -21,13 +21,6 @@ export const Sidebar = () => {
       icon: '💳',
       testId: 'menu-transactions',
     },
-    {
-      id: 'test',
-      label: '컴포넌트 테스트',
-      path: '/dashboard/test',
-      icon: '💳',
-      testId: 'menu-transactions',
-    },
   ];
 
   const isActive = (path: string) => {
